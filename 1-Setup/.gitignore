@@ -1,0 +1,12 @@
+# Node.js modüllerini dışla
+node_modules/
+
+# Log dosyaları
+*.log
+
+# Ortam dosyaları
+.env
+
+# Geçici dizinler
+dist/
+build/
