@@ -186,3 +186,19 @@ switch (day) {
         console.log("There is no such day");
         break;
 }
+// For loop 
+for (var i = 0; i < 3; i++) {
+    console.log("Value of i", i);
+}
+var NumberArr = [10, 20, 30, 40];
+for (var _i = 0, NumberArr_1 = NumberArr; _i < NumberArr_1.length; _i++) {
+    var item = NumberArr_1[_i];
+    console.log(item);
+}
+// let StringArr = "Furkan Soylu";
+// for (let items of StringArr) {
+//     console.log(items);
+// }
+for (var item in NumberArr) {
+    console.log(item);
+}
