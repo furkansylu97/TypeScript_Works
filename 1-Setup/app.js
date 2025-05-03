@@ -95,3 +95,8 @@ var PrintMedia;
 })(PrintMedia || (PrintMedia = {}));
 console.log(PrintMedia.Newsletter);
 console.log(PrintMedia['Newspaper']);
+// Union Type
+var code;
+// code = 1232;
+code = false;
+console.log(code);

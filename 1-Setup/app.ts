@@ -149,3 +149,12 @@ enum PrintMedia {
 
  console.log(PrintMedia.Newsletter);
  console.log(PrintMedia['Newspaper']);
+
+ // Union Type
+
+ let code: string | number | boolean;
+
+// code = 1232;
+
+code = false;
+console.log(code);
