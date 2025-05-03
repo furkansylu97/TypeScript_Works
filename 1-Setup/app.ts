@@ -310,3 +310,22 @@ for (let item of NumberArr) {
 for (let item in NumberArr) {
     console.log(item);
 }
+
+// DO WHİLE LOOP
+
+let counter = 10;
+
+
+while (counter < 5) {
+    console.log(counter);
+    counter++;
+
+    if (counter == 3) {
+        break;
+    }
+}
+
+do {
+    console.log(counter);
+    counter++;
+} while (counter < 5);

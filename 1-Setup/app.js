@@ -202,3 +202,16 @@ for (var _i = 0, NumberArr_1 = NumberArr; _i < NumberArr_1.length; _i++) {
 for (var item in NumberArr) {
     console.log(item);
 }
+// DO WHİLE LOOP
+var counter = 10;
+while (counter < 5) {
+    console.log(counter);
+    counter++;
+    if (counter == 3) {
+        break;
+    }
+}
+do {
+    console.log(counter);
+    counter++;
+} while (counter < 5);
