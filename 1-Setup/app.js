@@ -145,3 +145,16 @@ var employeeObj = {};
 console.log(typeof (employeeObj));
 employeeObj.name = "Furkan";
 console.log(employeeObj);
+// If Else - Ternary Operator 
+var x = 25;
+var y = 25;
+if (x > y) {
+    console.log("X Y den büyüktür");
+}
+else if (x < y) {
+    console.log("X Y den küçüktür ");
+}
+else {
+    console.log("X Y ye eşittir");
+}
+x > y ? console.log("X Y den büyüktür") : console.log("X Y den kucultur veya esittir");
