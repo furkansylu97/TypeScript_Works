@@ -1,3 +1,5 @@
+export {};
+
 let age: number = 29;
 let firstname: string = "Furkan";
 let lastname: string = "Soylu";
