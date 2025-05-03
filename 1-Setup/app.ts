@@ -366,3 +366,44 @@ function addDefaultStr(ad: string, soyad: string = "Asoğlu"): string {
 
 let defaultStr = addDefaultStr("Furkan", "Soylu");
 console.log(defaultStr);
+
+// OPTIONAL PARAMETERS & ARROW FUNCTION
+
+function multiplication(a: number, b: number, c?: number) {
+    console.log(typeof (c));
+    if (typeof c !== 'undefined') {
+        return a * b * c;
+    }
+
+    return a * b;
+}
+
+// c? is defining optional parameter
+
+let multipVariable = multiplication(5, 10);
+console.log(multipVariable);
+
+
+// function multiplicationFunc(a: number, b: number): number {
+//     return a * b;
+// }
+
+let multiplicationArrowFunc = (a: number, b: number): number => {
+    return a * b;
+}
+// let carpim = (a: number, b: number): number => a * b; // Single line arrow function definition
+
+
+let multipVariableArrow = multiplicationArrowFunc(4, 5);
+console.log(multipVariableArrow);
+
+
+let printScreen = () => {
+
+    console.log("Furkan Soylu");
+}
+
+
+// let print = () console.log("Can Boz"); // Single line arrow function definition
+
+printScreen();

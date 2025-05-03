@@ -238,3 +238,28 @@ function addDefaultStr(ad, soyad) {
 }
 var defaultStr = addDefaultStr("Furkan", "Soylu");
 console.log(defaultStr);
+// OPTIONAL PARAMETERS & ARROW FUNCTION
+function multiplication(a, b, c) {
+    console.log(typeof (c));
+    if (typeof c !== 'undefined') {
+        return a * b * c;
+    }
+    return a * b;
+}
+// c? is defining optional parameter
+var multipVariable = multiplication(5, 10);
+console.log(multipVariable);
+// function multiplicationFunc(a: number, b: number): number {
+//     return a * b;
+// }
+var multiplicationArrowFunc = function (a, b) {
+    return a * b;
+};
+// let carpim = (a: number, b: number): number => a * b; // Single line arrow function definition
+var multipVariableArrow = multiplicationArrowFunc(4, 5);
+console.log(multipVariableArrow);
+var printScreen = function () {
+    console.log("Furkan Soylu");
+};
+// let print = () console.log("Can Boz"); // Single line arrow function definition
+printScreen();
