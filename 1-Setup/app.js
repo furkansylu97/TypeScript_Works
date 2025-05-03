@@ -66,3 +66,32 @@ personFeat = {
     jobTitle: 'Machanical Engineer'
 };
 console.log(personFeat);
+var Media;
+(function (Media) {
+    Media[Media["Newspaper"] = 0] = "Newspaper";
+    Media[Media["Newsletter"] = 1] = "Newsletter";
+    Media[Media["Magazine"] = 2] = "Magazine";
+    Media[Media["Book"] = 3] = "Book";
+})(Media || (Media = {}));
+;
+console.log(Media.Newspaper);
+console.log(Media[3]);
+var Sports;
+(function (Sports) {
+    Sports[Sports["Basketball"] = 1] = "Basketball";
+    Sports[Sports["Futball"] = 2] = "Futball";
+    Sports[Sports["Tennis"] = 3] = "Tennis";
+    Sports[Sports["Book"] = 4] = "Book";
+})(Sports || (Sports = {}));
+;
+console.log(Sports.Basketball);
+console.log(Sports[3]);
+var PrintMedia;
+(function (PrintMedia) {
+    PrintMedia["Newspaper"] = "NEWSPAPER";
+    PrintMedia["Newsletter"] = "NEWSLETTER";
+    PrintMedia["Magazine"] = "MAGAZINE";
+    PrintMedia["Book"] = "BOOK";
+})(PrintMedia || (PrintMedia = {}));
+console.log(PrintMedia.Newsletter);
+console.log(PrintMedia['Newspaper']);

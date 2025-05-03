@@ -118,3 +118,34 @@ personFeat = {
 }
 
 console.log(personFeat);
+
+enum Media {
+    Newspaper,
+    Newsletter,
+    Magazine,
+    Book
+};
+
+console.log(Media.Newspaper);
+console.log(Media[3]);
+
+enum Sports {
+    Basketball = 1,
+    Futball,
+    Tennis,
+    Book
+};
+
+console.log(Sports.Basketball);
+console.log(Sports[3]);
+
+
+enum PrintMedia {
+     Newspaper = "NEWSPAPER",
+     Newsletter = "NEWSLETTER",
+     Magazine = "MAGAZINE",
+     Book = "BOOK"
+    }
+
+ console.log(PrintMedia.Newsletter);
+ console.log(PrintMedia['Newspaper']);
