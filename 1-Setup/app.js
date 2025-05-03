@@ -149,12 +149,40 @@ console.log(employeeObj);
 var x = 25;
 var y = 25;
 if (x > y) {
-    console.log("X Y den büyüktür");
+    console.log("X is greater than Y");
 }
 else if (x < y) {
-    console.log("X Y den küçüktür ");
+    console.log("X is less than Y");
 }
 else {
-    console.log("X Y ye eşittir");
+    console.log("X equals to Y");
 }
-x > y ? console.log("X Y den büyüktür") : console.log("X Y den kucultur veya esittir");
+x > y ? console.log("X is greater than Y") : console.log("X is less than Y or equals");
+// Switch Case
+var day = 26;
+switch (day) {
+    case 0:
+        console.log("Sunday");
+        break;
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    default:
+        console.log("There is no such day");
+        break;
+}
