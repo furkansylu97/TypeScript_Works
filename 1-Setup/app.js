@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var age = 29;
 var firstname = "Furkan";
 var lastname = "Soylu";
@@ -41,3 +43,13 @@ fruits = ['Apple', 'Orange', 'Banana'];
 for (var i = 0; i < fruits.length; i++) {
     console.log(fruits[i]); // output: Apple Orange Banana
 }
+//TUPLE
+var Id = 1;
+var instructorName = 'Furkan';
+var instructor = [1, "Furkan"];
+var user;
+user = [1, "Steve", true, 20, "Admin"];
+console.log(instructor, user);
+var employee;
+employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
+console.log(employee);

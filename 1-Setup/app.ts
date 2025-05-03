@@ -64,3 +64,20 @@ fruits = ['Apple', 'Orange', 'Banana'];
 for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]); // output: Apple Orange Banana
 }
+
+//TUPLE
+
+let Id: number = 1;
+let instructorName: string = 'Furkan';
+
+let instructor: [number, string] = [1, "Furkan"];
+
+var user: [number, string, boolean, number, string];
+user = [1, "Steve", true, 20, "Admin"];
+
+console.log(instructor, user);
+
+
+let employee: [number, string][];
+employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
+console.log(employee);
