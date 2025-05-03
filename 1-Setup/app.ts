@@ -329,3 +329,40 @@ do {
     console.log(counter);
     counter++;
 } while (counter < 5);
+
+// FUNCTION
+
+function add(a: number, b: number):number {
+    return a + b;
+}
+
+let summation = add(10, 20);
+
+console.log(typeof (summation));
+
+
+function print() {
+    console.log("Furkan Soylu");
+    return 35;
+}
+
+
+let variable = print();
+console.log(variable);
+
+
+function addStr(ad: string, soyad: string): string {
+    return ad + ' ' + soyad;
+}
+
+let Strvariable = addStr("Furkan", "Soylu");
+console.log(Strvariable);
+
+
+
+function addDefaultStr(ad: string, soyad: string = "Asoğlu"): string {
+    return ad + ' ' + soyad;
+}
+
+let defaultStr = addDefaultStr("Furkan", "Soylu");
+console.log(defaultStr);

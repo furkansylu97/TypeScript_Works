@@ -215,3 +215,26 @@ do {
     console.log(counter);
     counter++;
 } while (counter < 5);
+// FUNCTION
+function add(a, b) {
+    return a + b;
+}
+var summation = add(10, 20);
+console.log(typeof (summation));
+function print() {
+    console.log("Furkan Soylu");
+    return 35;
+}
+var variable = print();
+console.log(variable);
+function addStr(ad, soyad) {
+    return ad + ' ' + soyad;
+}
+var Strvariable = addStr("Furkan", "Soylu");
+console.log(Strvariable);
+function addDefaultStr(ad, soyad) {
+    if (soyad === void 0) { soyad = "Asoğlu"; }
+    return ad + ' ' + soyad;
+}
+var defaultStr = addDefaultStr("Furkan", "Soylu");
+console.log(defaultStr);
