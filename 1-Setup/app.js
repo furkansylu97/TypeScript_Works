@@ -268,3 +268,23 @@ function overloadingFunc(a, b) {
 }
 var overloadingVariable = overloadingFunc(44, ' Furkan');
 console.log(overloadingVariable);
+// REST PARAMETERS
+function sumAny(a) {
+    var numbers = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        numbers[_i - 1] = arguments[_i];
+    }
+    console.log(a);
+    var total = 0;
+    numbers.forEach(function (num) { return total += num; });
+    return total;
+}
+console.log(sumAny("Furkan", 20, 30));
+function combine(message) {
+    var names = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        names[_i - 1] = arguments[_i];
+    }
+    console.log(message + " " + names.join(", "));
+}
+combine("Merhaba", "Furkan", "Mehmet", "Ömer");

@@ -420,3 +420,21 @@ function overloadingFunc(a: any, b: any): any {
 
 let overloadingVariable = overloadingFunc(44, ' Furkan');
 console.log(overloadingVariable);
+
+// REST PARAMETERS
+
+function sumAny(a: string, ...numbers: number[]): number {
+    console.log(a);
+    let total = 0;
+    numbers.forEach((num) => total += num);
+    return total;
+}
+
+console.log(sumAny("Furkan", 20, 30));
+
+
+function combine(message: string, ...names: string[]) {
+    console.log(message + " " + names.join(", "));
+}
+
+combine("Merhaba", "Furkan", "Mehmet", "Ömer")
