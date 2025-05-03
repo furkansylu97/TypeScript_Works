@@ -442,8 +442,8 @@ combine("Merhaba", "Furkan", "Mehmet", "Ömer")
 // CLASS STRUCTURE
 
 class PersonInfo {
-    id: number;
-    firstName: string;
+    private id: number;
+    public firstName: string;
     lastName: string;
 
     constructor(id: number, firstName: string, lastName: string) {
@@ -457,6 +457,6 @@ class PersonInfo {
     }
 }
 
-let mypersonalinfo = new PersonInfo(43, 'Can', 'Boz');
+let mypersonalinfo = new PersonInfo(43, 'Furkan', 'Soylu');
 console.log(mypersonalinfo);
 console.log(mypersonalinfo.getFullName());

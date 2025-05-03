@@ -300,6 +300,6 @@ var PersonInfo = /** @class */ (function () {
     };
     return PersonInfo;
 }());
-var mypersonalinfo = new PersonInfo(43, 'Can', 'Boz');
+var mypersonalinfo = new PersonInfo(43, 'Furkan', 'Soylu');
 console.log(mypersonalinfo);
 console.log(mypersonalinfo.getFullName());
