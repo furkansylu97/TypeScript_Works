@@ -81,3 +81,40 @@ console.log(instructor, user);
 let employee: [number, string][];
 employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
 console.log(employee);
+
+// OBJECT
+
+type Person = {
+    firstName: string,
+    lastName: string,
+    age: number,
+    jobTitle: string
+};
+
+
+let instrustor: Person;
+
+instrustor = {
+    firstName: 'Furkan',
+    lastName: 'Soylu',
+    age: 27,
+    jobTitle: 'Software Engineer'
+}
+
+let personFeat: {
+    firstName: string,
+    lastName: string,
+    age: number,
+    jobTitle: string
+}
+
+
+
+personFeat = {
+    firstName: 'Mehmet',
+    lastName: 'Hattapoğlu',
+    age: 29,
+    jobTitle: 'Machanical Engineer'
+}
+
+console.log(personFeat);

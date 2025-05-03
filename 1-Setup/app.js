@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var age = 29;
 var firstname = "Furkan";
 var lastname = "Soylu";
@@ -53,3 +51,18 @@ console.log(instructor, user);
 var employee;
 employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
 console.log(employee);
+var instrustor;
+instrustor = {
+    firstName: 'Furkan',
+    lastName: 'Soylu',
+    age: 27,
+    jobTitle: 'Software Engineer'
+};
+var personFeat;
+personFeat = {
+    firstName: 'Mehmet',
+    lastName: 'Hattapoğlu',
+    age: 29,
+    jobTitle: 'Machanical Engineer'
+};
+console.log(personFeat);
