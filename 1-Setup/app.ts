@@ -438,3 +438,25 @@ function combine(message: string, ...names: string[]) {
 }
 
 combine("Merhaba", "Furkan", "Mehmet", "Ömer")
+
+// CLASS STRUCTURE
+
+class PersonInfo {
+    id: number;
+    firstName: string;
+    lastName: string;
+
+    constructor(id: number, firstName: string, lastName: string) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+let mypersonalinfo = new PersonInfo(43, 'Can', 'Boz');
+console.log(mypersonalinfo);
+console.log(mypersonalinfo.getFullName());

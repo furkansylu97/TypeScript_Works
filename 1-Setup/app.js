@@ -288,3 +288,18 @@ function combine(message) {
     console.log(message + " " + names.join(", "));
 }
 combine("Merhaba", "Furkan", "Mehmet", "Ömer");
+// CLASS STRUCTURE
+var PersonInfo = /** @class */ (function () {
+    function PersonInfo(id, firstName, lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    PersonInfo.prototype.getFullName = function () {
+        return "".concat(this.firstName, " ").concat(this.lastName);
+    };
+    return PersonInfo;
+}());
+var mypersonalinfo = new PersonInfo(43, 'Can', 'Boz');
+console.log(mypersonalinfo);
+console.log(mypersonalinfo.getFullName());
