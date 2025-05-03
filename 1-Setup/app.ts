@@ -172,3 +172,11 @@ console.log(someThing);
 
 let anyarr: any[] = ["John", 212, true];
 console.log(anyarr);
+
+// void type 
+
+function sayHello(): void {
+    console.log('Hi');
+}
+
+sayHello();

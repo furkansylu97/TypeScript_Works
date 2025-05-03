@@ -111,3 +111,8 @@ someThing = {
 console.log(someThing);
 var anyarr = ["John", 212, true];
 console.log(anyarr);
+// void type 
+function sayHello() {
+    console.log('Hi');
+}
+sayHello();
