@@ -100,3 +100,14 @@ var code;
 // code = 1232;
 code = false;
 console.log(code);
+// any type 
+var someThing = "Hello";
+someThing = 45;
+someThing = true;
+someThing = {
+    firstName: 'Furkan',
+    lastName: 'Soylu',
+};
+console.log(someThing);
+var anyarr = ["John", 212, true];
+console.log(anyarr);

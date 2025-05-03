@@ -158,3 +158,17 @@ enum PrintMedia {
 
 code = false;
 console.log(code);
+
+// any type 
+
+let someThing: any = "Hello";
+someThing = 45;
+someThing = true;
+someThing = {
+    firstName: 'Furkan',
+    lastName: 'Soylu',
+}
+console.log(someThing);
+
+let anyarr: any[] = ["John", 212, true];
+console.log(anyarr);
