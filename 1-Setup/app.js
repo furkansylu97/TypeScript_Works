@@ -123,3 +123,22 @@ function throwError(errorMsg) {
 throwError("Hata");
 // let something: void = null;
 // let nothing: never = null;
+// TYPE INFERENCE
+var sayac = 0;
+// let sayac:number = 0;
+console.log(typeof (sayac));
+// function increment(counter: number){
+//     return counter++;
+// }
+function increment(counter) {
+    return counter++;
+}
+// let a ="some text";
+// let b = 123;
+// a=b;
+function sum(a, b) {
+    return a + b;
+}
+var total = sum(10, 15);
+console.log(total);
+// let total: string = sum(10, 15);
