@@ -117,10 +117,10 @@ function sayHello() {
 }
 sayHello();
 // never type 
-function throwError(errorMsg) {
-    throw new Error(errorMsg);
-}
-throwError("Hata");
+// function throwError(errorMsg: string): never {
+//     throw new Error(errorMsg);
+// }
+// throwError("Hata");
 // let something: void = null;
 // let nothing: never = null;
 // TYPE INFERENCE
@@ -141,4 +141,7 @@ function sum(a, b) {
 }
 var total = sum(10, 15);
 console.log(total);
-// let total: string = sum(10, 15);
+var employeeObj = {};
+console.log(typeof (employeeObj));
+employeeObj.name = "Furkan";
+console.log(employeeObj);

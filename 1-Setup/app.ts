@@ -183,11 +183,11 @@ sayHello();
 
 // never type 
 
-function throwError(errorMsg: string): never {
-    throw new Error(errorMsg);
-}
+// function throwError(errorMsg: string): never {
+//     throw new Error(errorMsg);
+// }
 
-throwError("Hata");
+// throwError("Hata");
 
 
 // let something: void = null;
@@ -221,3 +221,20 @@ let total:number = sum(10,15);
 console.log(total);
 
 // let total: string = sum(10, 15);
+
+// TYPE ASSERTION
+
+// let code: any = 123;
+
+// let empCode = <number>code;
+// console.log(typeof (empCode));
+
+interface Employee {
+    name: string,
+    code: number
+}
+
+let employeeObj = <Employee>{};
+console.log(typeof (employeeObj));
+employeeObj.name = "Furkan";
+console.log(employeeObj);
