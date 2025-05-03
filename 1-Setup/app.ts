@@ -407,3 +407,16 @@ let printScreen = () => {
 // let print = () console.log("Can Boz"); // Single line arrow function definition
 
 printScreen();
+
+// FUNCTION OVERLOADING
+
+function overloadingFunc(a: string, b: string): string;
+function overloadingFunc(a: number, b: number): number;
+function overloadingFunc(a: number, b: string): any;
+
+function overloadingFunc(a: any, b: any): any {
+    return a + b;
+}
+
+let overloadingVariable = overloadingFunc(44, ' Furkan');
+console.log(overloadingVariable);

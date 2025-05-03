@@ -263,3 +263,8 @@ var printScreen = function () {
 };
 // let print = () console.log("Can Boz"); // Single line arrow function definition
 printScreen();
+function overloadingFunc(a, b) {
+    return a + b;
+}
+var overloadingVariable = overloadingFunc(44, ' Furkan');
+console.log(overloadingVariable);
