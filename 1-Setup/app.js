@@ -116,3 +116,10 @@ function sayHello() {
     console.log('Hi');
 }
 sayHello();
+// never type 
+function throwError(errorMsg) {
+    throw new Error(errorMsg);
+}
+throwError("Hata");
+// let something: void = null;
+// let nothing: never = null;
