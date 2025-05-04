@@ -475,3 +475,28 @@ class Employee extends PersonInfo {
 
 let employeePersonInfo = new Employee(44, "Serkan", "Çelik");
 console.log(employeePersonInfo.getFullName());
+
+// STATIC METHODS - PROPERTIES
+
+class Circle {
+    static pi: number = 3.14;
+    pi = 3;
+
+    constructor() {
+        this.pi++; // pi equals to 3 because Static methods cannot access instances of the class with the this keyword.
+        Circle.pi++;
+    }
+
+    static calculate(yaricap: number) {
+        return this.pi * yaricap * yaricap;
+    }
+}
+
+let myObject1 = new Circle();
+let myObject2 = new Circle(); // Since we created the object twice, the Circle.pi number becomes 5.14 (Circle.pi++)
+
+console.log(myObject1.pi); 
+console.log(myObject2.pi);
+
+console.log(Circle.pi);
+console.log(Circle.calculate(5));
