@@ -546,7 +546,7 @@ department.printMeeting();
 
 interface PersonInformation {
     // We define the type of the important values.
-    firstName: string,
+    readonly firstName: string,
     lastName: string,
     middleName?: string // optional parameter
 }
@@ -562,12 +562,14 @@ function getFullName(person: PersonInformation) {
     return `${person.firstName} ${person.lastName}`;
 }
 
-let person = {
+let person : PersonInformation = {
     firstName: 'Ahmad',
     lastName: 'Meşe',
     middleName: 'Mirzat',
 // We can also add values ​​that are not in the interface
-    age: 26
+// age: 26 // Interface of PersonInformation doesn't have age variable
 };
+
+// person.firstName = 'Ahmat' // We cannot assign a value because the parameter is defined as readonly.
 
 console.log(getFullName(person));

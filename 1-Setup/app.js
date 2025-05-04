@@ -391,6 +391,7 @@ var person = {
     lastName: 'Meşe',
     middleName: 'Mirzat',
     // We can also add values ​​that are not in the interface
-    age: 26
+    // age: 26 // Interface of PersonInformation doesn't have age variable
 };
+// person.firstName = 'Ahmat' // We cannot assign a value because the parameter is defined as readonly.
 console.log(getFullName(person));
