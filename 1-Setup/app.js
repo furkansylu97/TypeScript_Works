@@ -412,3 +412,13 @@ var employeeDepartment = {
 };
 console.log(employeeInf);
 console.log(employeeDepartment);
+var IEmployee = /** @class */ (function () {
+    function IEmployee(empNumber, name, gender) {
+        this.empNumber = empNumber;
+        this.name = name;
+        this.gender = gender;
+    }
+    return IEmployee;
+}());
+var Iemployee = new IEmployee(5, "Furkan", "Soylu ");
+console.log(Iemployee);

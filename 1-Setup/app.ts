@@ -586,6 +586,8 @@ format = function (str: string, isUpper: boolean) {
 
 console.log(format("Furkan Soylu", true));
 
+// INTERFACE EXTEND OPERATIONS AND INTERFACE IMPLEMENTATION
+
 interface IPerson {
     name: string;
     gender: string;
@@ -615,3 +617,23 @@ let employeeDepartment: IWorker = {
 
 console.log(employeeInf);
 console.log(employeeDepartment);
+
+interface IPerson {
+    name: string;
+    gender: string;
+}
+
+
+class IEmployee implements IPerson {
+    empNumber: number;
+    name: string;
+    gender: string;
+    constructor(empNumber: number, name: string, gender: string) {
+        this.empNumber = empNumber;
+        this.name = name;
+        this.gender = gender;
+    }
+}
+
+let Iemployee = new IEmployee(5, "Furkan", "Soylu ");
+console.log(Iemployee);
