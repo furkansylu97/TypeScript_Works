@@ -395,3 +395,8 @@ var person = {
 };
 // person.firstName = 'Ahmat' // We cannot assign a value because the parameter is defined as readonly.
 console.log(getFullName(person));
+var format;
+format = function (str, isUpper) {
+    return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
+};
+console.log(format("Furkan Soylu", true));
