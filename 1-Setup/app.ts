@@ -460,3 +460,18 @@ class PersonInfo {
 let mypersonalinfo = new PersonInfo(43, 'Furkan', 'Soylu');
 console.log(mypersonalinfo);
 console.log(mypersonalinfo.getFullName());
+
+//INHERITANCE
+
+// Person is  parent and Employee child class
+// Constructor of Parent class was triggered off with super keyword
+class Employee extends PersonInfo {
+    constructor(id: number,
+        firstName: string,
+        lastName: string) {
+        super(id, firstName, lastName)
+    }
+}
+
+let employeePersonInfo = new Employee(44, "Serkan", "Çelik");
+console.log(employeePersonInfo.getFullName());

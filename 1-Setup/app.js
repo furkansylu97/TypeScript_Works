@@ -1,3 +1,18 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var age = 29;
 var firstname = "Furkan";
 var lastname = "Soylu";
@@ -303,3 +318,15 @@ var PersonInfo = /** @class */ (function () {
 var mypersonalinfo = new PersonInfo(43, 'Furkan', 'Soylu');
 console.log(mypersonalinfo);
 console.log(mypersonalinfo.getFullName());
+//INHERITANCE
+// Person is  parent and Employee child class
+// Constructor of Parent class was triggered off with super keyword
+var Employee = /** @class */ (function (_super) {
+    __extends(Employee, _super);
+    function Employee(id, firstName, lastName) {
+        return _super.call(this, id, firstName, lastName) || this;
+    }
+    return Employee;
+}(PersonInfo));
+var employeePersonInfo = new Employee(44, "Serkan", "Çelik");
+console.log(employeePersonInfo.getFullName());
