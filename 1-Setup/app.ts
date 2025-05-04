@@ -732,7 +732,7 @@ function signContract(partner: BusinessPartnerInf): string {
 }
 
 
- // GENERICs
+ // GENERICS
 
  function getRandomNumber(items: number[]): number {
     let randomIndex = Math.floor(Math.random() * items.length);
@@ -766,3 +766,20 @@ function getRandomElement<T>(items: T[]): T {
 console.log(getRandomElement<number>(numbers));
 console.log(getRandomElement<string>(names));
 console.log(getRandomElement(degiskenlerim));
+
+// GENERICS CONSTRAINTS
+
+function merge<U extends object, V extends object>(obj1: U, obj2: V) {
+    return {
+        ...obj1,
+        ...obj2
+    }
+}
+
+let personal = merge(
+    { name: "Furkan" },
+    { age: 27 }
+    // 29 error
+)
+
+console.log(personal);
