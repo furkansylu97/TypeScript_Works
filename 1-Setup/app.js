@@ -349,3 +349,35 @@ console.log(myObject1.pi);
 console.log(myObject2.pi);
 console.log(Circle.pi);
 console.log(Circle.calculate(5));
+// ABSTRACT CLASS
+var Department = /** @class */ (function () {
+    function Department(name) {
+        this.name = name;
+    }
+    Department.prototype.printName = function () {
+        console.log("Department name: " + this.name);
+    };
+    return Department;
+}());
+// You cannot get a new instance of an abstract class by itself.
+// but you can give reference -- let department: Department, department = new AccountingDepartment();
+// You must implement abstract methods in abstract class which is the class you extend.
+var AccountingDepartment = /** @class */ (function (_super) {
+    __extends(AccountingDepartment, _super);
+    function AccountingDepartment() {
+        return _super.call(this, "Accounting and Auditing") || this;
+    }
+    AccountingDepartment.prototype.printMeeting = function () {
+        console.log("The Accounting Department meets each Monday at 10am.");
+    };
+    AccountingDepartment.prototype.generateReports = function () {
+        console.log("Generating accounting reports...");
+    };
+    return AccountingDepartment;
+}(Department));
+// let department = new AccountingDepartment(); // new instance method
+var department;
+department = new AccountingDepartment();
+department.printName();
+department.printMeeting();
+// department.generateReports();

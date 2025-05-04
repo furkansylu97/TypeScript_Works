@@ -500,3 +500,44 @@ console.log(myObject2.pi);
 
 console.log(Circle.pi);
 console.log(Circle.calculate(5));
+
+// ABSTRACT CLASS
+
+abstract class Department {
+    constructor(public name: string) { }
+
+    printName(): void {
+        console.log("Department name: " + this.name);
+    }
+    abstract printMeeting(): void;
+
+    // abstract generateReports(): void;
+}
+
+
+// You cannot get a new instance of an abstract class by itself.
+// but you can give reference -- let department: Department, department = new AccountingDepartment();
+// You must implement abstract methods in abstract class which is the class you extend.
+
+
+class AccountingDepartment extends Department {
+    constructor() {
+        super("Accounting and Auditing");
+    }
+
+    printMeeting(): void {
+        console.log("The Accounting Department meets each Monday at 10am.");
+    }
+
+    generateReports(): void {
+        console.log("Generating accounting reports...");
+    }
+
+}
+
+// let department = new AccountingDepartment(); // new instance method
+let department: Department
+department = new AccountingDepartment();
+department.printName();
+department.printMeeting();
+// department.generateReports();
