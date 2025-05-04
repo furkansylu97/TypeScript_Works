@@ -541,3 +541,26 @@ department = new AccountingDepartment();
 department.printName();
 department.printMeeting();
 // department.generateReports();
+
+// INTERFACE 
+
+interface PersonInformation {
+    // We define the type of the important values.
+    firstName: string,
+    lastName: string 
+}
+
+
+
+function getFullName(person: PersonInformation) {
+    return `${person.firstName} ${person.lastName}`;
+}
+
+let person = {
+    firstName: 'Mirzat',
+    lastName: 'Meşe',
+// We can also add values ​​that are not in the interface
+    age: 26
+};
+
+console.log(getFullName(person));

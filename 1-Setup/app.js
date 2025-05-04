@@ -380,4 +380,13 @@ var department;
 department = new AccountingDepartment();
 department.printName();
 department.printMeeting();
-// department.generateReports();
+function getFullName(person) {
+    return "".concat(person.firstName, " ").concat(person.lastName);
+}
+var person = {
+    firstName: 'Mirzat',
+    lastName: 'Meşe',
+    // We can also add values ​​that are not in the interface
+    age: 26
+};
+console.log(getFullName(person));
