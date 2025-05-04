@@ -381,11 +381,15 @@ department = new AccountingDepartment();
 department.printName();
 department.printMeeting();
 function getFullName(person) {
+    if (person.middleName) {
+        return "".concat(person.firstName, " ").concat(person.middleName, " ").concat(person.lastName);
+    }
     return "".concat(person.firstName, " ").concat(person.lastName);
 }
 var person = {
-    firstName: 'Mirzat',
+    firstName: 'Ahmad',
     lastName: 'Meşe',
+    middleName: 'Mirzat',
     // We can also add values ​​that are not in the interface
     age: 26
 };

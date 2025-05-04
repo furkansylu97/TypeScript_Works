@@ -547,18 +547,25 @@ department.printMeeting();
 interface PersonInformation {
     // We define the type of the important values.
     firstName: string,
-    lastName: string 
+    lastName: string,
+    middleName?: string // optional parameter
 }
 
 
 
 function getFullName(person: PersonInformation) {
+
+    if (person.middleName) {
+        return `${person.firstName} ${person.middleName} ${person.lastName}`;
+    }
+
     return `${person.firstName} ${person.lastName}`;
 }
 
 let person = {
-    firstName: 'Mirzat',
+    firstName: 'Ahmad',
     lastName: 'Meşe',
+    middleName: 'Mirzat',
 // We can also add values ​​that are not in the interface
     age: 26
 };
