@@ -585,3 +585,33 @@ format = function (str: string, isUpper: boolean) {
 }
 
 console.log(format("Furkan Soylu", true));
+
+interface IPerson {
+    name: string;
+    gender: string;
+}
+
+interface IEmployee extends IPerson {
+    empNumber: number;
+}
+
+interface IWorker extends IPerson {
+    empDepartment: string;
+}
+
+let employeeInf: IEmployee = {
+    empNumber: 1,
+    gender: 'Male',
+    name: 'Can'
+
+}
+
+let employeeDepartment: IWorker = {
+    empDepartment: 'Software Department',
+    gender: 'Male',
+    name: 'Can'
+
+}
+
+console.log(employeeInf);
+console.log(employeeDepartment);

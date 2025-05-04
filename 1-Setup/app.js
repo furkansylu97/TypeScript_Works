@@ -400,3 +400,15 @@ format = function (str, isUpper) {
     return isUpper ? str.toLocaleUpperCase() : str.toLocaleLowerCase();
 };
 console.log(format("Furkan Soylu", true));
+var employeeInf = {
+    empNumber: 1,
+    gender: 'Male',
+    name: 'Can'
+};
+var employeeDepartment = {
+    empDepartment: 'Software Department',
+    gender: 'Male',
+    name: 'Can'
+};
+console.log(employeeInf);
+console.log(employeeDepartment);
