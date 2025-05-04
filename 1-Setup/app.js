@@ -478,3 +478,28 @@ function signContract(partner) {
     }
     return message;
 }
+// GENERICs
+function getRandomNumber(items) {
+    var randomIndex = Math.floor(Math.random() * items.length);
+    return items[randomIndex];
+}
+var numbers = [1, 54, 65, 7, 8];
+console.log(getRandomNumber(numbers));
+function getRandomString(items) {
+    var randomIndex = Math.floor(Math.random() * items.length);
+    return items[randomIndex];
+}
+var names = ["Doğan", "Arif", "Furkan"];
+console.log(getRandomString(names));
+// function getRandomElement(items: any[]): any {
+//     let randomIndex = Math.floor(Math.random() * items.length);
+//     return items[randomIndex];
+// }
+var degiskenlerim = [true, false, true];
+function getRandomElement(items) {
+    var randomIndex = Math.floor(Math.random() * items.length);
+    return items[randomIndex];
+}
+console.log(getRandomElement(numbers));
+console.log(getRandomElement(names));
+console.log(getRandomElement(degiskenlerim));
