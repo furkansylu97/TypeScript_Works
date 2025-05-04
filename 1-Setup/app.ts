@@ -444,7 +444,7 @@ combine("Merhaba", "Furkan", "Mehmet", "Ömer")
 class PersonInfo {
     private id: number;
     public firstName: string;
-    lastName: string;
+    readonly lastName: string;
 
     constructor(id: number, firstName: string, lastName: string) {
         this.id = id;
