@@ -436,3 +436,45 @@ var customer = {
     phone: "+903423423324"
 };
 console.log(customer);
+function addCharacter(a, b) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    }
+    if (typeof a === 'string' && typeof b === 'string') {
+        return a.concat(b);
+    }
+    throw new Error('Please send data in the correct format');
+}
+// console.log(addCharacter(5, "Furkan")); // We get a error 
+console.log(addCharacter('Soylu', 'Furkan'));
+var CustomerInf = /** @class */ (function () {
+    function CustomerInf() {
+    }
+    CustomerInf.prototype.isCreditAllowed = function () {
+        // ...
+        return true;
+    };
+    return CustomerInf;
+}());
+var Supplier = /** @class */ (function () {
+    function Supplier() {
+    }
+    Supplier.prototype.isInShortList = function () {
+        // ...
+        return true;
+    };
+    return Supplier;
+}());
+function signContract(partner) {
+    var message;
+    if (partner instanceof CustomerInf) {
+        message = partner.isCreditAllowed() ? 'Sign a new contract with the customer' : 'Credit issue';
+    }
+    if (partner instanceof Supplier) {
+        message = partner.isInShortList() ? 'Sign a new contract the supplier' : 'Need to evaluate further';
+    }
+    else {
+        message = 'Unknown partner type';
+    }
+    return message;
+}

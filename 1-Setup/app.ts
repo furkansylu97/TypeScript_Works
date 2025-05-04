@@ -677,3 +677,56 @@ let customer: Customer = {
 }
 
 console.log(customer);
+
+// TYPE GUARD
+
+type character = string | number;
+
+function addCharacter(a: character, b: character) {
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a + b;
+    }
+
+    if (typeof a === 'string' && typeof b === 'string') {
+        return a.concat(b);
+    }
+
+    throw new Error('Please send data in the correct format');
+}
+
+// console.log(addCharacter(5, "Furkan")); // We get a error 
+console.log(addCharacter('Soylu', 'Furkan'));
+
+
+class CustomerInf {
+    isCreditAllowed(): boolean {
+        // ...
+        return true;
+    }
+}
+
+class Supplier {
+    isInShortList(): boolean {
+        // ...
+        return true;
+    }
+}
+
+type BusinessPartnerInf = CustomerInf | Supplier;
+
+function signContract(partner: BusinessPartnerInf): string {
+    let message: string;
+    if (partner instanceof CustomerInf) {
+        message = partner.isCreditAllowed() ? 'Sign a new contract with the customer' : 'Credit issue';
+    }
+
+    if (partner instanceof Supplier) {
+        message = partner.isInShortList() ? 'Sign a new contract the supplier' : 'Need to evaluate further';
+    }
+
+    else {
+        message = 'Unknown partner type';
+    }
+
+    return message;
+}
