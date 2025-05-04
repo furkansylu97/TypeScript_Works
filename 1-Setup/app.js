@@ -422,3 +422,17 @@ var IEmployee = /** @class */ (function () {
 }());
 var Iemployee = new IEmployee(5, "Furkan", "Soylu ");
 console.log(Iemployee);
+var workerPersonal = {
+    id: 54,
+    name: "Furkan Soylu",
+    email: "furkannsl@hotmail.com",
+    phone: "+90345435345324"
+};
+console.log(workerPersonal);
+var customer = {
+    credit: 2121,
+    email: "azmits@hotmail.com",
+    name: "Azmi asoğlu",
+    phone: "+903423423324"
+};
+console.log(customer);

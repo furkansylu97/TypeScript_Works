@@ -637,3 +637,43 @@ class IEmployee implements IPerson {
 
 let Iemployee = new IEmployee(5, "Furkan", "Soylu ");
 console.log(Iemployee);
+
+// TYPE INTERSECTION
+
+interface BusinessPartner {
+    name: string;
+    credit: number;
+}
+
+interface Identity {
+    name: string;
+    id: number;
+}
+
+
+interface Contact {
+    email: string;
+    phone: string;
+}
+
+type Worker = Identity & Contact;
+
+let workerPersonal: Worker = {
+    id: 54,
+    name: "Furkan Soylu",
+    email: "furkannsl@hotmail.com",
+    phone: "+90345435345324"
+}
+
+console.log(workerPersonal);
+
+type Customer = BusinessPartner & Contact;
+
+let customer: Customer = {
+    credit: 2121,
+    email: "azmits@hotmail.com",
+    name: "Azmi asoğlu",
+    phone: "+903423423324"
+}
+
+console.log(customer);
