@@ -10,11 +10,26 @@ function App() {
     lastName :'Meşe',
   }
 
+  const instructerList = [
+    {
+      firstName : 'Mehmet',
+      lastName :'Hattapoğlu',
+    },
+    {
+      firstName : 'Ömer',
+      lastName :'Güldaş',
+    },
+    {
+      firstName : 'Arif',
+      lastName :'Sevi',
+    }
+  ]
+
   return (
     <>
       <Home name = 'Furkan Soylu' courseNumber = {15} isBest={true} />
       <Instructor instructureInfo = {instructer} />
-      <InstructorList />
+      <InstructorList instructureListInfo = {instructerList} />
     </>
   )
 }
