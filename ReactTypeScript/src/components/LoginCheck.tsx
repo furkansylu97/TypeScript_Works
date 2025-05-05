@@ -27,7 +27,9 @@ function LoginCheck() {
     <div>
         <button onClick={handleLogin}>Log In</button>
         <button onClick={handleLogout}>Log Out</button>
-        <div></div>
+        <p>{user?.name}</p>
+        <p>{user?.email}</p>
+        <p>{user?.phone}</p>
     </div>
   )
 }
