@@ -5,7 +5,7 @@ export const theme = {
     },
     secondary: {
       main: '#dddddd',
-      text: '#fff',
+      text: 'red',
     },
   };
   
