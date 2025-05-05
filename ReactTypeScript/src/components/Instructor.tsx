@@ -10,7 +10,10 @@ type instructureProps = {
 
 function Instructor(props:instructureProps) {
   return (
-    <div>Instructor</div>
+    <div>
+        <div>Instructor Name :</div>
+        <div>{props.instructureInfo.firstName} {props.instructureInfo.lastName}</div>
+    </div>
   )
 }
 
