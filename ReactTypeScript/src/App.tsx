@@ -6,6 +6,7 @@ import Instructor from './components/Instructor'
 import InstructorList from './components/InstructorList'
 import LoginCheck from './components/LoginCheck'
 import ReducerExample from './components/ReducerExample'
+import RefExemple from './components/RefExample'
 import Request from './components/Request'
 import { ThemeContextProvider } from './components/ThemeContex'
 
@@ -43,6 +44,7 @@ function App() {
       <ThemeContextProvider>
         <ContextExample />
       </ThemeContextProvider>
+      <RefExemple />
     </>
   )
 }
