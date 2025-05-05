@@ -9,7 +9,7 @@ type UserType = {
 
 function LoginCheck() {
 
-    const [user, setUser] = useState<UserType | null >(null);
+    const [user, setUser] = useState<UserType | null >({} as UserType);
 
     const handleLogin = () => {
         setUser({
