@@ -1,7 +1,7 @@
 import React from 'react'
 
 type RequestProps = {
-    status: string;
+    status: 'loading' | 'success' | 'error';
 }
 
 function Request(props: RequestProps) {
