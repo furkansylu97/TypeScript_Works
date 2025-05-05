@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <Home name = 'Furkan Soylu' courseNumber = {15} />
+      <Home name = 'Furkan Soylu' courseNumber = {15} isBest={true} />
     </>
   )
 }
