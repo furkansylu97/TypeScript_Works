@@ -2,6 +2,7 @@ import './App.css'
 import Home from './components/Home'
 import Instructor from './components/Instructor'
 import InstructorList from './components/InstructorList'
+import Request from './components/Request'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Home name = 'Furkan Soylu' courseNumber = {15} isBest={true} />
       <Instructor instructureInfo = {instructer} />
       <InstructorList instructureListInfo = {instructerList} />
+      <Request status = 'loading' />
     </>
   )
 }
