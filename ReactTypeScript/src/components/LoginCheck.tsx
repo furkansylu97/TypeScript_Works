@@ -1,9 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
 
+type UserType = {
+    name: string,
+    email: string,
+    phone: string,
+}
+
 function LoginCheck() {
 
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<UserType | null >(null);
 
     const handleLogin = () => {
         setUser({
