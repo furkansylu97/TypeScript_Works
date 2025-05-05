@@ -1,12 +1,5 @@
 import React from 'react'
-
-type instructureProps = {
-
-    instructureInfo :{
-        firstName :string,
-        lastName: string,
-    }
-}
+import { instructureProps } from './propstypes'
 
 function Instructor(props:instructureProps) {
   return (

@@ -1,10 +1,5 @@
 import React from 'react'
-
-type ComingData = {
-    name :string
-    courseNumber :number
-    isBest :Boolean
-}
+import { ComingData } from './propstypes'
 
 function Home(props: ComingData) {
   return (
