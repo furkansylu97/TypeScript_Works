@@ -9,11 +9,17 @@ type ActionType = {
     type: string;
     payload: number;
 };
+
+type ResetType = {
+    type: 'reset';
+  };
+  
+  type CounterAction = ActionType | ResetType;
   
     
   const initialState = { count: 0 };
 
-function reducer(state: CounterType, action: ActionType) {
+function reducer(state: CounterType, action: CounterAction) {
     switch (action.type) {
       case 'increment':
         return { count: state.count + action.payload };
