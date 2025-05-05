@@ -1,8 +1,14 @@
 import React from 'react'
 
-function Home() {
+type ComingData = {
+    name :string
+}
+
+function Home(props: ComingData) {
   return (
-    <div>Home</div>
+    <div>
+       Welcome {props.name} 
+    </div>
   )
 }
 
