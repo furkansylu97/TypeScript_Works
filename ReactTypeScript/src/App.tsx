@@ -1,4 +1,5 @@
 import './App.css'
+import EventActions from './components/EventActions'
 import Home from './components/Home'
 import Instructor from './components/Instructor'
 import InstructorList from './components/InstructorList'
@@ -32,6 +33,7 @@ function App() {
       <Instructor instructureInfo = {instructer} />
       <InstructorList instructureListInfo = {instructerList} />
       <Request status = 'loading' />
+      <EventActions />
     </>
   )
 }
