@@ -1,9 +1,19 @@
 import React from 'react'
 import { useReducer } from 'react';
+
+type CounterType = {
+    count: number;
+  };
+
+type ActionType = {
+    type: string;
+    payload: number;
+};
+  
     
   const initialState = { count: 0 };
 
-function reducer(state, action) {
+function reducer(state: CounterType, action: ActionType) {
     switch (action.type) {
       case 'increment':
         return { count: state.count + action.payload };
