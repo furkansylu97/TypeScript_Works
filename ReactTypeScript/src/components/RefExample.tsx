@@ -2,9 +2,9 @@ import React from 'react';
 import { useRef, useEffect } from 'react';
 
 function RefExemple() {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
-    inputRef.current.focus();
+    inputRef.current?.focus();
   }, []);
   return (
     <div>
