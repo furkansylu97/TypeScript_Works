@@ -9,7 +9,14 @@ type instructureListInfoProps = {
 
 function InstructorList(props: instructureListInfoProps) {
   return (
-    <div>InstructorList</div>
+    <div>
+        <h1>Instructor List</h1>
+        {props.instructureListInfo.map(item => {
+            return (
+                <h3 key={item.firstName}>{item.firstName} {item.lastName}</h3>
+            )
+        })}
+    </div>
   )
 }
 
