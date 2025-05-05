@@ -1,8 +1,28 @@
 import React from 'react'
+import { useState } from 'react'
 
 function LoginCheck() {
+
+    const [user, setUser] = useState(null);
+
+    const handleLogin = () => {
+        setUser({
+            name: 'Furkan',
+            email: 'fsoylu567@hotmail.com',
+            phone: '0554 655 64 64'
+        });
+    }
+
+    const handleLogout = () => {
+
+    }
+
   return (
-    <div>LoginCheck</div>
+    <div>
+        <button onClick={handleLogin}>Log In</button>
+        <button onClick={handleLogout}>Log Out</button>
+        <div></div>
+    </div>
   )
 }
 
