@@ -4,10 +4,15 @@ import Instructor from './components/Instructor'
 
 function App() {
 
+  const instructer = {
+    firstName : 'Ahmat Mirzat',
+    lastName :'Meşe',
+  }
+
   return (
     <>
       <Home name = 'Furkan Soylu' courseNumber = {15} isBest={true} />
-      <Instructor />
+      <Instructor instructureInfo = {instructer} />
     </>
   )
 }

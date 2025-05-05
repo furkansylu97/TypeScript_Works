@@ -1,6 +1,14 @@
 import React from 'react'
 
-function Instructor() {
+type instructureProps = {
+
+    instructureInfo :{
+        firstName :string,
+        lastName: string,
+    }
+}
+
+function Instructor(props:instructureProps) {
   return (
     <div>Instructor</div>
   )
