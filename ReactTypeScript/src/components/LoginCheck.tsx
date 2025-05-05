@@ -20,7 +20,7 @@ function LoginCheck() {
     }
 
     const handleLogout = () => {
-
+        setUser({} as UserType);
     }
 
   return (
